@@ -1,0 +1,24 @@
+<div class="container" *ngIf="medicineEntity">
+  <h2>Venta {{medicineEntity.nameMedicine}}</h2>
+  <form novalidate >
+    <div class="form-group">
+      <label for="exampleInputEmail1">Cantidad</label>
+      <input
+        type="number" min="1"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"        
+      />      
+    </div>
+    <div class="form-group">
+      <label >Valor Unitario</label>
+      <p >$45</p>
+    </div>
+    <div class="form-group">
+      <label >Valor Total</label>
+      <p >$45</p>
+    </div>
+   
+    <button type="submit" class="btn btn-primary">Comprar</button>
+  </form>
+</div>
